@@ -219,20 +219,22 @@ def plt_tune_m(X_train, y_train, X_cv, y_cv, x, y_pred, err_train, err_cv, m_ran
     plt.tight_layout()
     plt.show()  
     
-dkcolors = plt.cm.Paired((1,3,7,9,5,11))
+# cm.Paired has 12 colors, alternating light and dark.
+#https://matplotlib.org/stable/tutorials/colors/colormaps.html
+dkcolors = plt.cm.Paired((1,3,7,9,5,11))  # pick paired colors
 ltcolors = plt.cm.Paired((0,2,6,8,4,10))
-dkcolors_map = mpl.colors.ListedColormap(dkcolors)
-ltcolors_map = mpl.colors.ListedColormap(ltcolors)
+dkcolors_map = mpl.colors.ListedColormap(dkcolors) # turn colors into a color map
+ltcolors_map = mpl.colors.ListedColormap(ltcolors) # These have 6 entries - see lt_colors_map.colors
 
-def plt_mc_data(ax, X, y, classes,  class_labels=None, map=plt.cm.Paired, legend=False,size=50, m='o'):
+def plt_mc_data(ax, X, y, classes,  class_labels=None, map=plt.cm.Paired, legend=False, size=50, m='o'):
+    normy = mpl.colors.Normalize(vmin=0, vmax=classes)
     for i in range(classes):
         idx = np.where(y == i)
-        col = len(idx[0])*[i]
         label = class_labels[i] if class_labels else "c{}".format(i)
         ax.scatter(X[idx, 0], X[idx, 1],  marker=m,
-                    c=col, vmin=0, vmax=map.N, cmap=map,
-                    s=size, label=label)
-    if legend: ax.legend()
+                   color=map(normy(i)),
+                   s=size, label=label)
+    if legend: ax.legend(loc='lower right')
     ax.axis('equal')
 
 
@@ -403,14 +405,14 @@ def plt_compare(X,y, classes, simple, regularized, centers):
 
     err_s = eval_cat_err(y, simple(X))
     err_r = eval_cat_err(y, regularized(X))
-    ax[0].text(-2.75,3,f"err_test={err_s:0.2f}", fontsize=12)
-    ax[1].text(-2.75,3,f"err_test={err_r:0.2f}", fontsize=12)
+    ax[0].text(-2.75,3,f"err_test={err_s:0.2f}", fontsize=11)
+    ax[1].text(-2.75,3,f"err_test={err_r:0.2f}", fontsize=11)
     m = len(X)
     y_eq  = np.zeros(m)
     for i in range(m):
         y_eq[i] = recat(X[i], centers)
     err_eq = eval_cat_err(y, y_eq)
-    ax[2].text(-2.75,3,f"err_test={err_eq:0.2f}", fontsize=12)
+    ax[2].text(-2.75,3,f"err_test={err_eq:0.2f}", fontsize=11)
     plt.show()
 
 # --- End Assignment ----------------------------------------
