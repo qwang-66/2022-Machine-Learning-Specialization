@@ -169,7 +169,7 @@ projected onto the axis Z using these line
 segments that you still retain as much of the variance of the original
 data as possible. I know that when I plot these
 things in two-dimensions, we've just two
-features, which is, I can draw on a flat
+features, which is all I can draw on a flat
 computer monitor. These arrows look like maybe they're a
 little bit similar. But when you have more
 than two features, which is most of the case, the difference between

@@ -1,5 +1,4 @@
-In this video, we'll take a
-look at how you can use the scikit-learn library
+In this video, we'll take a look at how you can use the scikit-learn library
 to implement PCA. These are the main steps. First, if your features take on very different
 ranges of values, you can perform
 pre-processing to scale the features to take on comparable ranges of values. If you were looking at the features of
@@ -76,7 +75,7 @@ is two-dimensional, so the two axes, Z_1 and Z_2, together they
 explain 100 percent of the variance in the data. If you were to
 transform our project the data onto the
 Z_1 and Z_2 axes, this is what you get, with now the first
-training example is napped too these two numbers, corresponding to its
+training example is mapped too these two numbers, corresponding to its
 projection onto z_1, and z_2, and the second example, which is this projected
 onto z_1 and z_2, becomes these two numbers. If you were to reconstruct the original data
 roughly this is z_1, and this z_2, then the first training
@@ -126,14 +125,14 @@ to 100 features using PCA and then your dataset is
 basically smaller and your supervised learning
 algorithm may run faster. This used to make a difference
 in the running time of some of the older generations
-of learning algorithms, such as if you have had a
+of learning algorithms, such as if you have heard of a
 support vector machines. This will speed up a
 support vector machine. But it turns out with modern
 machine learning algorithms, algorithms like deep learning, this doesn't actually
 hold that much, and is much more common to just take the
 high-dimensional dataset, and feed it into say
 your neural network. Rather than run PCA because PCA has some computational
-cost as well. You may hear about this in some of the other research papers, but I don't really see
+cost as well. You may hear about this in some of the older research papers, but I don't really see
 this done much anymore. But the most common
 thing that I use PCA for today is
 visualization and then I find it very useful to reduce the dimensional data
