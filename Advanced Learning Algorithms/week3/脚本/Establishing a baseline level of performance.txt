@@ -105,7 +105,7 @@ have a high bias problem, and the gap between these
 two numbers gives you a sense of whether you have
 a high variance problem. Sometimes the baseline level of performance could
 be zero percent. If your goal is to achieve perfect performance
-than the baseline level of performance it
+than the baseline level of performance
 could be zero percent, but for some applications like the speech recognition
 application where some audio is just noisy then
 the baseline level of a performance could be

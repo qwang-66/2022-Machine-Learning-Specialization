@@ -13,14 +13,14 @@ machine learning project is to scope the project. In other words, decide what is
 you want to work on. For example, I once
 decided to work on speech recognition
 for voice search. That is to do web search using speaking to your mobile phone rather than typing into
-your mobile phone. This project scoping. After deciding what to work
+your mobile phone, so this is project scoping. After deciding what to work
 on you have to collect data. Decide what data you need to train your machine
-learning system and go and do the work to get
+learning system and go to do the work to get
 the audio and get the transcripts of the
 labels for your dataset. That's data collection. After you have your
 initial data collection you can then start
 to train the model. Here you would train a speech
-recognition system and caravel error analysis and iteratively improve your model. Is not at all uncommon. After you've started training the model for error analysis or for a bias-variance
+recognition system and carry out error analysis and iteratively improve your model. It is not at all uncommon after you've started training the model for error analysis or for a bias-variance
 analysis to tell you that you might want to go
 back to collect more data. Maybe collect more
 data of everything or just collect more data
@@ -34,16 +34,16 @@ was speaking in a car. My speech system perform poorly
 decided to get more data, actually using data augmentation to get more speech data that sounds like it was
 a car in order to improve the performance
 of my learning algorithm. You go around this loop a
-few times, train the model, error analysis, go back
+few times, train the model, carry error analysis, go back
 to collect more data, maybe do this for a while
-until eventually you say the model is good enough to then deploy in a production
+until eventually you think the model is good enough to then deploy in a production
 environment. What that means is you make it available for users to use. When you deploy a
 system you have to also make sure
 that you continue to monitor the performance
 of the system and to maintain the system
-in case the performance gets worse to bring us
-performance back up instead of just hosting your machine
-learning model on a server. I'll say a little bit more
+in case the performance gets worse to bring the
+performance back up. Instead of just hosting your machine
+learning model on a server, I'll say a little bit more
 about why you need to maintain these machine learning systems on the next slide. But after this deployment, sometimes you realize that is not working as well
 as you hoped and you go back to train the model
 to improve it again or even go back

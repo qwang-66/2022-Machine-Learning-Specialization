@@ -17,7 +17,7 @@ I recommend then is to implement or to look
 at a few diagnostics, such as looking at the bias and variance of your
 algorithm as well as something we'll see in the next video called
 error analysis. Based on the insights
-from the diagnostics, you can then make decisions like do want to make
+from the diagnostics, you can then make decisions like do you want to make
 your neural network bigger or change the Lambda
 regularization parameter, or maybe add more data or add more features
 or subtract features. Then you go around this loop again with your new
@@ -29,7 +29,7 @@ passionately hate email spam and this
 is a problem that I worked on years ago and
 also was involved in starting an anti-spam
 conference once years ago. The example on the left is what a highly spammy email
-might look like. Deal of the week, by
+might look like. Deal of the week, buy
 now, Rolex watches. Spammers will
 sometimes deliberately misspell words like these, watches, medicine, and mortgages in order to try to trip
 up a spam recognizer. In contrast, this email on the right is an
@@ -65,7 +65,7 @@ or a neural network to predict y given
 these features x. After you've trained
 your initial model, if it doesn't work
 as well as you wish, you will quite likely have multiple ideas for improving the learning algorithm's
-performance. For example, is always
+performance. For example, it's always
 tempting to collect more data. In fact, I have friends
 that have worked on very large-scale
 honeypot projects. These are projects that

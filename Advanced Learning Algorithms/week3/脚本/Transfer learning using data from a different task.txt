@@ -100,10 +100,10 @@ edges in an image. The next layer of the neural
 network then learns to group together edges
 to detect corners. Each of these is a
 visualization of what one neuron may
-have learned to detect, must learn to technical, simple shapes like corner
+have learned to detect, learn to detect simple shapes like corner
 like shapes like this. The next layer of the
 neural network may have learned to detect some
-are more complex, they store generic shapes like basic curves or smaller
+are more complex, they are still generic shapes like basic curves or smaller
 shapes like these. That's why by learning on detecting lots of
 different images, you're teaching the neural
 network to detect edges, corners, and basic shapes. That's why by training a neural network to detect
@@ -122,7 +122,7 @@ pre-trained on images probably won't
 do much good on audio. Instead, you want
 a neural network pre-trained on audio data, there you then fine tune on your own audio dataset and the same for other types
 of applications. You can pre-train a neural
-network on text data and If your application has a save feature input
+network on text data and If your application has a same feature input
 x of text data, then you can fine
 tune that neural network on your own data. To summarize, these are the two steps for
 transfer learning. Step 1 is download neural
